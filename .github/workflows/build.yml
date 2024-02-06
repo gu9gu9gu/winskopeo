@@ -27,7 +27,7 @@ jobs:
                   tagName
                 }
               }
-              local: repository(owner:"passcod", name:"winskopeo") {
+              local: repository(owner:"gu9gu9gu", name:"winskopeo") {
                 latestRelease {
                   tagName
                 }
