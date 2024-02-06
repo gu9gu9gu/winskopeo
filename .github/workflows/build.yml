@@ -16,7 +16,7 @@ jobs:
       version: ${{ steps.version.outputs.result }}
     steps:
       - name: Find latest version
-        uses: actions/github-script@v6
+        uses: actions/github-script@v7
         id: version
         with:
           result-encoding: string
@@ -65,7 +65,7 @@ jobs:
         run: make bin/skopeo.windows.amd64.exe
 
       - name: Create release
-        uses: actions/github-script@v6
+        uses: actions/github-script@v7
         with:
           script: |
             const release = await github.rest.repos.createRelease({
